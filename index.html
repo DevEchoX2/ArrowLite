@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArrowLite</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <i data-lucide="gamepad-2"></i>
+      <h1>ArrowLite</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search games..." />
+      <i data-lucide="search"></i>
+    </div>
+    <div class="header-right">
+      <i data-lucide="settings" id="settingsIcon"></i>
+    </div>
+  </header>
+
+  <main class="game-grid" id="gameGrid"></main>
+
+  <div class="game-overlay" id="gameOverlay">
+    <div class="overlay-controls">
+      <button id="fullscreenBtn"><i data-lucide="maximize-2"></i></button>
+      <button id="reloadBtn"><i data-lucide="rotate-ccw"></i></button>
+      <button id="downloadBtn"><i data-lucide="download"></i></button>
+      <button id="blobBtn"><i data-lucide="link"></i></button>
+      <button id="closeBtn"><i data-lucide="x"></i></button>
+    </div>
+    <iframe id="gameFrame" src="" frameborder="0"></iframe>
+  </div>
+
+  <div class="settings-popup" id="settingsPopup">
+    <div class="settings-header">
+      <h2>Settings</h2>
+      <button id="closeSettings"><i data-lucide="x"></i></button>
+    </div>
+    <div class="settings-body">
+      <button id="themeToggleBtn">Toggle Light Mode</button>
+      <button id="blankBtn">Tab Cloak</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
