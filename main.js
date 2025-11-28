@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Game list
   const games = [
     { title: "A dance of fire and ice",  img: "images/ADOFAI.jpeg",  url: "games/ADOFAI.html" },
-    { title: "A Dark Room", img: "images/ADarkRoom.png", url: "games/ADarkRoom.html" }
+    { title: "A Dark Room", img: "images/ADarkRoom.png", url: "games/ADarkRoom.html" },
+    { title: "A Day in the office", img: "images/.png", url: "games/ADayintheoffice.html" }
     // Add more games here
   ];
 
